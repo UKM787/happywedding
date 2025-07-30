@@ -1,0 +1,107 @@
+a:hover,a:focus{
+    text-decoration: none;
+    outline: none;
+}
+#accordion .panel{
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    margin-bottom: 20px;
+}
+#accordion .panel-heading{
+    padding: 0;
+    border-radius: 0;
+    background: #fff;
+}
+#accordion .panel-title a{
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    padding: 15px 40px 15px 80px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    position: relative;
+}
+#accordion .panel-title a:before,
+#accordion .panel-title a.collapsed:before{
+    content: "\f068";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 20px;
+    font-weight: normal;
+    color: #fff;
+    position: absolute;
+    top: 9px;
+    left: 15px;
+    background: #dca2d9;
+    padding: 5px 15px;
+    border-radius: 20px;
+    transition: all 0.5s ease 0s;
+}
+#accordion .panel-title a.collapsed:before{
+    content: "\f067";
+    background: #dfdfdf;
+    color: #fff;
+}
+#accordion .panel-body{
+    font-size: 14px;
+    color: #6f6f6f;
+    padding: 15px 40px;
+    line-height: 25px;
+    border: none;
+}
+a:hover,a:focus{
+    text-decoration: none;
+    outline: none;
+}
+#accordion .panel{
+    border: none;
+    background-color: pink;
+    box-shadow: none;
+    border-radius: 0;
+    margin-bottom: 20px;
+}
+#accordion .panel-heading{
+    padding: 0;
+    border-radius: 0;
+    background: #fff;
+}
+#accordion .panel-title a{
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    padding: 15px 40px 15px 80px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    position: relative;
+}
+#accordion .panel-title a:before,
+#accordion .panel-title a.collapsed:before{
+    content: "\f068";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 20px;
+    font-weight: normal;
+    color: #fff;
+    position: absolute;
+    top: 9px;
+    left: 15px;
+    background: #09264a;
+    padding: 5px 15px;
+    border-radius: 20px;
+    transition: all 0.5s ease 0s;
+}
+#accordion .panel-title a.collapsed:before{
+    content: "\f067";
+    background: #dfdfdf;
+    color: #fff;
+}
+#accordion .panel-body{
+    font-size: 14px;
+    color: #6f6f6f;
+    padding: 15px 40px;
+    line-height: 25px;
+    border: none;
+}

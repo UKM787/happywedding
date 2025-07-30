@@ -1,0 +1,17 @@
+[Unit]
+Description=HappyWed Queue Worker
+After=network.target
+
+[Service]
+Type=simple
+User=www-data
+Group=www-data
+Restart=always
+RestartSec=5s
+ExecStart=/usr/bin/php /path/to/your/happywed/artisan queue:work database --sleep=3 --tries=3 --max-time=3600
+WorkingDirectory=/path/to/your/happywed
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

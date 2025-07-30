@@ -1,0 +1,9 @@
+# Add this line to your crontab (run: crontab -e)
+# This will process queued jobs every minute
+* * * * * cd /path/to/your/happywed && php artisan queue:work --stop-when-empty
+
+# Alternative: Process jobs with timeout
+* * * * * cd /path/to/your/happywed && timeout 50 php artisan queue:work database
+
+# For better logging, add this:
+* * * * * cd /path/to/your/happywed && php artisan queue:work --stop-when-empty >> /path/to/your/happywed/storage/logs/cron-queue.log 2>&1

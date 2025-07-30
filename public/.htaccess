@@ -1,0 +1,67 @@
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+    </IfModule>
+
+    RewriteEngine On
+
+    # Handle Authorization Header
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+    # Redirect Trailing Slashes If Not A Folder...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} (.+)/$
+    RewriteRule ^ %1 [L,R=301]
+
+    # Handle image paths in multiple locations
+    
+    # 1. Try case-insensitive matching (convert to lowercase)
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ ${lc:$1} [N]
+    
+    # 2. Check if the request is for an image in storage
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_URI} \.(jpg|jpeg|png|gif|svg)$ [NC]
+    RewriteCond %{REQUEST_URI} ^/storage/(.*)$
+    # 2a. Try in uploads directory
+    RewriteCond %{DOCUMENT_ROOT}/uploads/%1 -f
+    RewriteRule ^storage/(.*)$ /uploads/$1 [L]
+    
+    # 3. Check if the request is for an image directly
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_URI} \.(jpg|jpeg|png|gif|svg)$ [NC]
+    RewriteCond %{REQUEST_URI} ^/Uploads/(.*)$ [NC]
+    # 3a. Try in storage directory
+    RewriteCond %{DOCUMENT_ROOT}/storage/Uploads/%1 -f
+    RewriteRule ^Uploads/(.*)$ /storage/Uploads/$1 [L]
+    
+    # 4. Try lowercase version for case-sensitive servers
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_URI} \.(jpg|jpeg|png|gif|svg)$ [NC]
+    RewriteRule ^(.*)$ ${lc:$1} [L]
+
+    # Send Requests To Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+</IfModule>
+
+# Add these rules to handle image paths
+<IfModule mod_rewrite.c>
+    # Handle case-insensitive image paths
+    RewriteEngine On
+    
+    # If the file doesn't exist in the requested case, try lowercase
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^(.*)$ ${lc:$1} [R=301,L]
+    
+    # Try to find the file in alternative locations
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_URI} ^/storage/(.*)$
+    RewriteCond %{DOCUMENT_ROOT}/uploads/%1 -f
+    RewriteRule ^storage/(.*)$ /uploads/$1 [L]
+</IfModule>
+
+

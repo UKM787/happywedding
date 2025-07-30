@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunk=self.webpackChunk||[]).push([[3294],{23294:(e,t,l)=>{l.r(t),l.d(t,{default:()=>s});const n={};const s=(0,l(51900).Z)(n,(function(){return(0,this._self._c)("h1",[this._v("template needed")])}),[],!1,null,null,null).exports}}]);
+//# sourceMappingURL=3294.js.map

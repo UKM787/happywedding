@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="150" height="50" viewBox="0 0 150 50">
+  <text x="10" y="30" font-family="Arial" font-size="24" fill="#FF5BFF" font-weight="bold">HAPPY</text>
+  <path d="M45 10 L50 15 L45 20" fill="none" stroke="#FF5BFF" stroke-width="2"/>
+  <circle cx="5" cy="10" r="3" fill="#FF5BFF"/>
+</svg>
+

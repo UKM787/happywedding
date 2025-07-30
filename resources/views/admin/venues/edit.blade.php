@@ -1,0 +1,22 @@
+@extends('layouts.admin')
+
+@section('content')
+<div class="wed-host-section">
+    <div class="wed-host-section-container">
+        <p><a href="{{route('adminvenues.index')}}" class="btn wed-btn-main">back</a></p>
+        <div class="wed-host-section-container-title h2">
+            {{$venue ? 'Edit '.$venue->name : 'Add New Venue' ;}}
+        </div>
+        <div class="wed-host-section-container-form">
+            <form method="post" action="{{route('adminvenues.update', [ $venue])}}" class="admin-form" id="admin-form" enctype="multipart/form-data">
+                @csrf
+                @method('PATCH')
+                @include('partials._venue', ['venue' => $venue, 'categories' => $categories, 'locations' => $locations])
+
+            </form>
+        </div>
+    </div>
+</div>
+
+
+@endsection

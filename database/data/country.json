@@ -1,0 +1,35 @@
+[
+    {"name": "India",
+    "code": "IN",
+     "states" : [
+        {"name": "Punjab", "code": "PB"},
+        {"name": "Haryana", "code": "HR"},
+        {"name": "Jammu and Kashmir", "code": "JK"},
+        {"name": "Uttrakhand", "code": "UK"},
+        {"name": "Uttar Pradesh", "code": "UP"},
+        {"name": "Delhi", "code": "DL"}
+        ]   
+    },
+     {"name": "United States of America",
+    "code": "US" ,
+     "states" : [
+        {"name": "Punjab", "code": "PB"},
+        {"name": "Haryana", "code": "HR"},
+        {"name": "Jammu and Kashmir", "code": "JK"},
+        {"name": "Uttrakhand", "code": "UK"},
+        {"name": "Uttar Pradesh", "code": "UP"},
+        {"name": "Delhi", "code": "DL"}    
+        ]    
+    },
+     {"name": "United Kingdom",
+    "code": "UK",
+     "states" : [
+        {"name": "Punjab", "code": "PB"},
+        {"name": "Haryana", "code": "HR"},
+        {"name": "Jammu and Kashmir", "code": "JK"},
+        {"name": "Uttrakhand", "code": "UK"},
+        {"name": "Uttar Pradesh", "code": "UP"},
+        {"name": "Delhi", "code": "DL"}
+        ]  
+    }
+]

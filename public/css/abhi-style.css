@@ -1,0 +1,1707 @@
+
+/* *{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color:#000;
+    background: linear-gradient(115.66deg, #E09EB4 2.2%, #E2D0D0 100%);
+    font-style: normal;
+    font-weight: 600;
+    min-height: 100vh;
+
+} */
+.wed-header-testing{
+    font-size:1.2rem;
+    color:red;
+}
+.signup {
+  background-attachment: fixed;
+  background: url(../img/signupbg.png);
+  background-position: right;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-color: #FFF;
+  }
+
+/* h2 {
+    font-size: 24px;
+    color: #000;
+    margin-bottom: 50px;
+
+} */
+/* h3 {
+    font-family: 'EB Garamond', serif;
+    font-size: 35px;
+line-height: 40px;
+color: #000;
+margin-bottom: 30px;
+
+} */
+img {
+    max-width: 100%;
+}
+
+.text-right {
+    text-align: right;
+}
+.text-org {
+    color: #F0AE4B;
+}
+
+/* wed-host-main-nav slider */
+
+  .wed-host-main-nav {
+    margin-top: 2em;
+  }
+
+  .wed-host-main-nav-items {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 4px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    border-radius: 30px;
+  }
+
+  .wed-host-main-nav-items > li {
+    padding: 0.6em 2.5em;
+    align-items: center;
+  }
+
+  .wed-host-main-nav-items .active {
+    color: #fff;
+    border-radius: 15.5em;
+    background: #461952;
+  }
+
+  .wed-host-main-nav .splide__arrow {
+    font-size: 1.1em;
+    position: absolute;
+    margin-inline-end: 0em;
+    margin-top: -12em;
+  }
+
+    /* wed-host-invitation-nav slider */
+
+    .wed-host-invitation-nav {
+    margin-top: 2em;
+    }
+
+    .wed-host-invitation-nav-items {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 4px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    border-radius: 30px;
+  }
+
+   .wed-host-invitation-nav-items > li {
+    padding: 0.6em 2.5em;
+    align-items: center;
+  }
+
+  .wed-host-invitation-nav-items .active {
+    color: #fff;
+    border-radius: 1em;
+    background: #461952;
+    padding: 0.5em;
+}
+    .wed-host-invitation-nav .splide__arrow {
+    font-size: 1.1em;
+    position: absolute;
+    margin-inline-end: 0em;
+    margin-top: -12em;
+    }
+
+   /* wed-host-ceramonies slider */
+
+    .wed-host-ceramonies-items {
+    padding: 4px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    border-radius: 30px;
+    }
+
+    .wed-host-ceramonies-items>li {
+        padding: 0.6em 2.5em;
+    align-items: center;
+
+    }
+
+    .wed-host-ceramonies-items .active {
+    border-radius: 1em;
+    /* background: #461952; */
+
+    }
+
+    .wed-host-ceramonies .splide__arrow {
+        font-size: 1.1em;
+        position: absolute;
+        margin-inline-end: 0em;
+    }
+
+
+
+/*********** form  start****************/
+
+.form-control {
+    border:none;
+    background: none;
+    border-bottom: 1px solid #EBEBEB;
+    border-radius: 0;
+}
+.form-control:focus {
+    border:none;
+    background: none;
+    border-bottom: 2px solid #2DD348;
+    box-shadow: none;
+}
+.form-label, .form-check-label {
+    color: #82869A;
+    font-size: 12px;
+}
+
+.admin-form .form-control {
+    background: #FFFFFF;
+border: 0.554865px solid #BAB4B4;
+box-sizing: border-box;
+box-shadow: 0px 2.21946px 2.21946px rgba(0, 0, 0, 0.25);
+border-radius: 20px;
+padding-left:10px;
+padding-right: 10px;
+
+}
+/*********** form  end****************/
+.signup-form .form-control {
+    padding: .375rem 0;
+    border-bottom-width: 2px;
+}
+.signup-form {
+    font-family: 'Manrope', sans-serif;
+
+}
+.signup p {
+    color:rgba(40, 44, 64, .6);
+    font-family: 'Manrope', sans-serif;
+}
+.signup h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    color:#282C40;
+}
+.signup .btn-submit{
+    background: linear-gradient(180deg, #FF01C7 0%, #FF4518 100%);
+}
+
+
+footer {
+    background: #000;
+    color: #FFF;
+    padding: 140px 0 80px;
+    font-size: 15px;
+line-height: 20px;
+}
+footer a {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 15px;
+line-height: 20px;
+}
+footer ul {
+    margin: 0;
+    padding: 36px 0px 0 60px;
+}
+footer ul li {
+    list-style: none;
+    padding: 0;
+}
+p.foot-lang {
+    border-bottom: 1px solid #FFF;
+    padding: 50px 0 20px;
+    margin-bottom: 50px;
+}
+/*
+.btn {
+    height: 49px;
+box-shadow: 0px 0px 5.24px 3.93px rgba(0, 0, 0, 0.25);
+border-radius: 6.55px;
+font-style: normal;
+font-weight: 600;
+font-size: 15px;
+line-height: 20px;
+color: #FFF;
+padding: 12px 56px;
+border:none;
+}
+.btn.no-shadow {
+    box-shadow: none;
+}
+.btn-sm {
+    height: 38px;
+    padding: 8px 20px;
+}
+.btn-primary{
+    background: #461952;
+}
+.btn-default {
+    background: #B8BBC6;
+}
+.btn-secondary {
+    background: #FF5BFF;
+box-shadow: 0px 0px 5.24px 3.93px rgba(0, 0, 0, 0.25);
+border-radius: 6.55px;
+}
+.btn-danger {
+    background: linear-gradient(94.51deg, #FA6296 3.62%, #FF8BA1 100%);
+box-shadow: 0px 0px 5.24px 3.93px rgba(0, 0, 0, 0.25);
+border-radius: 6.55px;
+}
+.btn-info {
+    background: linear-gradient(94.51deg, #5E4DF1 3.62%, #8B6EF1 100%);
+box-shadow: 0px 0px 5.24px 3.93px rgba(0, 0, 0, 0.25);
+border-radius: 6.55px;
+}
+.btn-success {
+    background: linear-gradient(94.51deg, #2DAD80 3.62%, #4AC699 100%);
+box-shadow: 0px 0px 5.24px 3.93px rgba(0, 0, 0, 0.25);
+border-radius: 6.55px;
+}
+
+.btn-red {
+    background: linear-gradient(180deg, #FF0BB8 0%, #FF4518 100%);
+border-radius: 26.0586px;
+font-size: 12px;
+}
+.wed-btn-main {
+    background: #7F004B;
+border-radius: 26.0586px;
+font-size: 12px;
+padding-left: 30px;
+padding-right: 30px;
+}
+.no-btn-bg {
+    background: #FFF;
+    color:#FF0BB8;
+} */
+
+/***************** Navigation section start ********/
+nav {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 4px 0;
+    background: transparent;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background: #461952;
+    border-radius: 20.3324px;
+}
+.nav-pills .nav-link {
+    color: #000;
+}
+.navigation {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    z-index: 99999;
+    padding-top: 25px;
+}
+.navigation .nav ul {
+    margin: 0px;
+    padding:0px;
+}
+.navigation .nav ul li {
+    display: inline-block;
+    padding: 10px 10px;
+}
+.navigation .nav ul li a {
+font-weight: bold;
+font-size: 14px;
+line-height: 16px;
+color: #FFF;
+text-decoration: none;
+}
+
+.navigation ul li.active a {
+    color:#FF8BA1;
+}
+.navigation .btn {
+    margin-left: 10px;
+}
+
+nav ul li span {
+    display: none;
+}
+
+.wed-guest-button  {
+    padding: 0.5em 1em;
+    margin-right: 1em;
+    border-radius: 1.5em;
+    background-color: #EA34A2;
+    border:0px
+
+}
+
+/***************** Navigation section end ********/
+
+/* .btn.btn-xs {
+    background: #E7E2E2;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    font-size: 10px;
+    border-radius: 27.7433px;
+    padding: 2px 8px;
+    height: auto;
+    color: #000000;
+}
+.fb-btn {
+    background: #395185;
+} */
+
+/* Header  Start*/
+/* header {
+    background: #461952;
+    padding-top: 4px;
+    padding-bottom:4px;
+}
+.hamb-icon {
+    color: #FFF;
+    font-size: 24px;
+    display: inline-block;
+    margin: 15px;
+}
+
+.profile {
+    text-align: right;
+    padding-top: 1.2em;
+    position: relative;
+    margin: 0 2em;
+} */
+.profile ul, .profile-dropdown ul {
+    padding: 0px;
+    margin:0px;
+}
+.profile ul li {
+    display: inline-block;
+    list-style: none;
+}
+.profile-dropdown {
+    position: absolute;
+    z-index: 999999;
+    display: none;
+    top: 100%;
+    width: 200px;
+    background: #FFF;
+    right: 0;
+    margin-top: 13px;
+    padding: 15px;
+}
+.profile-dropdown ul li {
+    display: block;
+    text-align: left;
+}
+.profile-dropdown ul li a{
+    padding: 5px 0;
+    color: #000;
+    display: block;
+    text-decoration: none;
+}
+/***************** Header end ***********************/
+
+
+
+.box .info {
+    font-size: 20px;
+    margin-left: 15px;
+}
+.box h2 {
+    padding: 0 15px;
+}
+.box span {
+    line-height: 30px;
+}
+.event-box {
+    background: #ECEAEA;
+    border: 0.5px solid #8D8686;
+    box-sizing: border-box;
+    border-radius: 11px;
+    position: relative;
+    padding:0.8em 2.5em;
+    margin-bottom: 0.5em;
+}
+.event-box p {
+    color: #8D8686;
+}
+p.date-text {
+    font-size: 13.0769px;
+    line-height: 17px;
+    color: #CA7218;
+}
+
+.event-state{
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    width: 40px;
+    text-align: center;
+}
+.more {
+    right: 0;
+    position: absolute;
+    top: 10px;
+    width: 40px;
+    text-align: center;
+}
+
+.left-box {
+    padding: 40px 70px;
+}
+.left-box h2 {
+    margin-bottom: 0px;
+    color: #461952;
+    font-weight: bold;
+font-size: 36px;
+line-height: 190%;
+
+}
+/*************slider****************************/
+.slider {
+    position: relative;
+}
+.slider:after{
+    position: absolute;
+    content: '';
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #46195299;
+    z-index: 1;
+}
+.carousel-caption {
+    z-index: 9;
+    top: 30%;
+    bottom: 0;
+}
+.carousel-caption h2 {
+    font-size: 40px;
+    font-family: 'Seaweed Script', cursive;
+}
+
+.carousel-caption h2 {
+    color: #FFF;
+}
+.carousel-indicators {
+    z-index: 99999;
+}
+.invite, .service {
+background: #F2E7E7;
+
+}
+.planning {
+    background: #FFF;
+}
+.book-appointment {
+    background: #FFF;
+}
+.book-appointment h3 {
+    font-family: 'Seaweed Script', cursive;
+    font-size: 30px;
+}
+.testimonial{
+    background: #F2E7E7;
+}
+
+.continue-txt {
+    position: relative;
+    margin: 30px 0;
+}
+.continue-txt:after {
+    width: 100%;
+    height: 1px;
+    content: '';
+    position: absolute;
+    left: 0;
+    background: #CCC;
+    top: 50%;
+}
+.continue {
+    background: #FFF;
+    padding: 0 20px;
+    position: relative;
+    z-index: 11;
+}
+.invite {
+    padding: 100px 0;
+}
+.invite p, .planning p {
+    font-size: 20px;
+line-height: 27px;
+color: #000;
+margin-bottom: 30px;
+}
+.planning {
+    padding: 140px 0;
+}
+.service, .book-appointment {
+    padding: 120px 0;
+}
+.service h3 {
+    font-size: 25px;
+line-height: 29px;
+margin-bottom: 100px;
+}
+.service p {
+    font-size: 20px;
+line-height: 23px;
+color: #4E4646;
+margin-top: 20px;
+}
+.testimonial h4{
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 33px;
+    color: #461952;
+    margin-bottom: 80px;
+
+}
+.testimonial {
+    padding: 120px 0;
+}
+p.img-cap {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    margin: 20px 0 40px;
+
+}
+
+.f-reverse {
+    flex-direction: row-reverse;
+}
+.box-wrap{
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 50px;
+}
+.box-wrap p {
+    font-size: 11px;
+}
+.submenu ul, .submenu2 ul {
+    padding: 0px;
+    margin:0.3em 0.5em;
+}
+.submenu ul li, .submenu2 ul li {
+    display: inline-block;
+    margin: 5px 10px;
+}
+.submenu ul li:first-child, .submenu2 ul li:first-child {
+    margin-left: 0px;
+}
+.submenu ul li a, .submenu2 ul li a{
+    background: #FFF;
+box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.25);
+border-radius: 13.7475px;
+padding: 5px 25px;
+font-size: 14px;
+line-height: 16px;
+color: #242424;
+text-decoration: none;
+}
+.submenu ul li a.active {
+    background: #F0B844;
+    color: black;
+}
+.venue {
+    margin:40px 0;
+}
+/* Guest Form */
+
+.guest-form .form-control {
+    background: #FCFCFD;
+    border: 1px solid #CFD0D7;
+}
+.guest-form .form-label, .guest-form .form-check-label {
+    color: #5F6377;
+    font-size: 12px;
+}
+.btn-upload {
+    box-sizing: border-box;
+    font-size: 10px;
+    border-radius: 27.7433px;
+    padding: 2px 20px;
+    height: auto;
+    box-shadow: none;
+}
+.upload-cover {
+    background: #DEDADA;
+    border-radius: 5px;
+    padding: 10px ;
+}
+.upload-cover .filename {
+    font-size: 10px;
+    display: none;
+}
+/* _venue.html css start*/
+.venue-box .add-venue {
+    background: rgba(256,256,256,.6);
+    padding: 30px;
+    border-radius: 20px;
+}
+.venue-box .v-box {
+    background: #A98192;
+    padding: 10px;
+    color: #FFF;
+    border-radius: 15px;
+    font-size: 14px;
+    box-shadow: 1.25191px 1.25191px 2.50382px rgba(0, 0, 0, 0.25);
+}
+.venue-box .v-box .date {
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+.venue-box .v-box img {
+    width: 100%;
+}
+.venue-box .v-title {
+    color: #7F004B;
+    font-size: 18px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+.venue-box .v-title a{
+    color: #7F004B;
+    margin-left: 10px;
+}
+/* _venue.html css end*/
+/*_cover.html css start */
+
+.invitation-box {
+    background: rgba(256,256,256, .6);
+    padding: 1em 0;
+}
+.invitation-box nav {
+    background: #461952;
+    border-radius: 6px;
+    padding: 10px 30px;
+    margin-left: -5px;
+    margin-right: -5px;
+    margin-bottom: 0px;
+}
+.invitation-box .nav-pills .nav-link {
+    color: #FFF;
+}
+.invitation-box .nav-pills .nav-link.active, .invitation-box .nav-pills .show>.nav-link {
+background: #FFF;
+color: #461952;
+}
+.invitation-form {
+    background: rgba(256,256,256, .6);
+    padding: 1em;
+}
+.story-box {
+    padding-top: 50px;
+}
+.e-card-box {
+    background: url(../img/cermony-bg.png) center 100% no-repeat;
+    width: 100%;
+    min-height: 510px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.e-card-box h4 {
+    font-family: 'Seaweed Script', cursive;
+    color:#461952;
+    font-size: 24px;
+}
+.e-card-box p {
+    color:#CA6B19;
+    font-size: 17px;
+}
+.e-card-box .c-text {
+    font-size: 34px;
+    color: #7F004B;
+}
+
+
+/* host landing page */
+
+.host-land .card h4 {
+    font-size: 12px;
+}
+.host-set-box img {
+    width: 100%;
+    border-radius: 10px;
+}
+.host-cer-box{
+    background: rgba(255, 255, 255, 0.9);
+box-shadow: 0px 1.69364px 1.69364px rgba(0, 0, 0, 0.25);
+backdrop-filter: blur(1.69364px);
+/* Note: backdrop-filter has minimal browser support */
+
+border-radius: 15px;
+padding: 25px;
+}
+.host-cer-box h2, .host-venue-box h2 {
+    margin-bottom: 15px;
+    text-align: center;
+
+}
+.host-cer-box ul, .host-not-box ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.host-cer-box ul li, .host-not-box ul li {
+    padding: 15px 0;
+}
+.host-cer-box .btn {
+    box-shadow: none;
+}
+.host-venue-box {
+    border-radius: 15px;
+    padding: 25px;
+
+    background: linear-gradient(95.03deg, #FC9611 6.18%, #F0A019 49.52%, #DAB227 91.19%);
+border-radius: 24.1627px;
+
+}
+.host-not-box {
+    background: #CA1E06;
+    border-radius: 15px;
+    padding: 20px;
+color: #FFF;
+}
+.host-not-box ul li img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.host-not-box ul li {
+    padding: 10px 0;
+}
+.host-not-box h2 {
+    text-align: center;
+    padding-bottom: 15px;
+    color: #FFF;
+    margin-bottom: 0;
+}
+.host-not-box a {
+    color: #FFF;
+    text-decoration: none;
+}
+.host-inv-card {
+    border:none;
+}
+.host-inv-card .card-header {
+    background: #7F004B;
+    text-align: center;
+    color: #FFF;
+}
+.host-inv-card .i-box {
+    box-shadow: 0px 2.63372px 2.63372px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    padding: 10px 5px 20px;
+    color: #FFF;
+}
+.host-inv-card .i-box h4 {
+    font-size: 10px;
+}
+
+.host-inv-card .i-box p {
+    margin-bottom: 0px;
+    font-size: 34px;
+}
+.host-inv-card .i-burple {
+    background: rgba(169, 129, 146, 0.8);
+}
+.host-inv-card .i-green {
+    background: rgba(72, 162, 75, 0.8);
+}
+.host-inv-card .i-orange {
+    background: rgba(255, 77, 0, 0.8);
+}
+.host-inv-card .i-red {
+    background: rgba(255, 1, 1, 0.8);
+}
+
+.host-land .storage {
+    background: #FFF;
+    padding: 10px 20px 5px;
+    border-radius: 15px;
+}
+.host-land .storage h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.host-land .storage .p-bar {
+    width: 100%;
+    height: 12px;
+    border-radius: 10px;
+    background: #f1f1f1;
+    position: relative;
+    margin-bottom: 10px;
+}
+.host-land .storage .p-bar .used-bar {
+    position: absolute;
+    height: 100%;
+    content: '';
+    background: #8A1B2D;
+    border-radius: 10px;
+
+}
+.host-tot-box {
+       background:  linear-gradient(95.79deg, #521950 0%, #8A1B2D 43.75%, #D31E00 100%);
+    box-shadow: 0px 3.16253px 3.16253px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+.host-tot-box .inner-box {
+    background: url('../img/tot-bg.png') no-repeat right;
+    background-size: contain;
+}
+.host-tot-box h3 {
+    padding: 15px;
+    margin: 0px;
+    font-size: 22px;
+    color: #FFF;
+}
+.host-tot-box span {
+    font-size: 34px;
+    color: #FFF;
+    margin-right: 15px;
+    padding-left: 15px;
+}
+.host-tot-box .btn-orange {
+    background: linear-gradient(180deg, #F0B844 0%, #FE5706 100%);
+border-radius: 23.719px;
+}
+.host-land .task-box {
+    background: #48A24B;
+    border-radius: 15px;
+    padding: 15px;
+}
+.host-land .task-box h4, .host-land .todo-box h4 {
+    color: #FFF;
+    font-size: 18px;
+}
+.host-land .task-box .host-task-list, .host-land .todo-box .host-todo-list {
+    background: #FFF;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.host-land .host-task-list .btn-task, .host-land .todo-box .btn-todo {
+    box-shadow: none;
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 15px;
+    height: auto;
+    border-radius: 5px;
+}
+.host-land .task-box .host-task-list span img, .host-land .todo-box .host-todo-list span img {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.host-land .todo-box {
+    background: #DAB227;
+    border-radius: 15px;
+    padding: 15px;
+}
+.host-land .host-report {
+    background: #FFF;
+    padding: 25px;
+    border-radius: 15px;
+}
+.host-land .host-report .online, .host-land .host-report .online.active {
+    width: 8px;
+    height: 8px;
+    background: #CCC;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+}
+.host-land .host-report .online.active {
+    background: #48A24B;
+}
+.host-land .host-report .table th {
+    border-bottom: none;
+    color: #AEAEAE;
+    font-weight: normal;
+}
+.host-land .host-report .table {
+    color: #AEAEAE;
+}
+.host-land .host-report .table tr td:first-child {
+    color: #000;
+}
+.host-land .host-report .table img{
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+ }
+ .guest-form .error, .signup-form label.error {
+    font-size: 10px;
+    color: #F00;
+ }
+ .signup-form .form-control.error:focus {
+     border-color: #F00;
+
+ }
+
+@media only screen and (max-width: 991px) {
+   /*  .navigation  {
+        display: none;
+        width: 300px;
+        height: 100%;
+        position: fixed;
+        padding: 10px;
+        background: #261629;
+    }
+    .navigation .nav ul li {
+        display: block;
+    } */
+    .login-section {
+        text-align: left;
+        margin-top: 15px;
+        padding-top: 15px;
+        border-top: 1px solid #CCC;
+    }
+    .login-section a {
+        display: block;
+        margin-bottom: 15px;
+    }
+    .mob-login {
+        text-align: right;
+    }
+    .mob-login a{
+        width: 28px;
+        height: 28px;
+        display: inline-block;
+        background: #38102c;
+        border-radius: 50%;
+        text-align: center;
+        font-size: 14px;
+        padding: 5px;
+        margin-top: 8px;
+        color: #fb59fb;
+    }
+    .nav-close {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        padding: 15px;
+        color: #ff8ba1;
+    }
+}
+/* mobile responsive view */
+@media only screen and (max-width: 767px) {
+
+    .wed-host-invitation-nav li, .wed-host-main-nav li
+    {
+        background: url(../img/signupbg.png);
+        color: white;
+        font-size: 2em;
+        text-align: center;
+    }
+    .sm-text-left {
+        text-align: left
+    }
+    .profile ul li.hide-sm {
+        display: none;
+    }
+    .profile {
+        padding-top: 0.7em;
+    }
+    footer ul {
+        padding: 20px 0px 0 0;
+    }
+    footer, .invite, .planning, .book-appointment, .testimonial, .service {
+        padding: 40px 0;
+    }
+    /* h3 {
+        font-size: 24px;
+        line-height: 30px;
+        color: #000;
+        margin-bottom: 20px;
+        margin-top:20px;
+    } */
+    .service h3 {
+        margin-bottom: 30px;
+    }
+    .left-box {
+        padding: 15px;
+        margin-top: 15px;
+        position: relative;
+        z-index: 111;
+    }
+    .left-box p, .left-box h3 {
+        color: #8D8686;
+    }
+    .signup {
+        background-attachment: unset;
+        background: url(../img/signupbg.png);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #0c0d0e;
+        position: relative;
+    }
+
+    .signup:after {
+        background: rgba(0, 0, 0, 0.8);
+        content: '';
+        top:0;
+        left: 0;
+        position: absolute;
+        margin-top: 50px;
+        width: 100%;
+        height: 100%;
+    }
+    .btn.fb-btn {
+        margin-bottom: 15px;
+    }
+    .carousel-item img {
+        min-height: 250px;
+    }
+    .carousel-caption {
+        top:0px;
+            }
+
+    .carousel-caption h2,p {
+        font-size: 1.5em;
+        display: none;
+    }
+
+    .btn-mob-full {
+        margin-top: 9em;
+       width: 70%;
+       padding: 0.8em 0.2em;
+       border-radius: 50%;
+    }
+
+
+    .f-reverse {
+        flex-direction: row;
+    }
+    .hamb-icon {
+        margin:10px;
+    }
+
+    nav {
+        margin: 0px 0px 30px;
+        padding: 10px 0;
+        border-radius: 0;
+    }
+    nav ul li span {
+        background: rgba(255,255,255, .1);
+        width: 30px;
+        display: inline-block;
+        border-radius: 50%;
+        height: 30px;
+    }
+    .nav-pills .nav-link {
+        font-size: 8px;
+        padding: 0;
+        color: #7C6F6F;
+
+    }
+    .submenu ul, .submenu2 ul {
+        margin: 15px 0;
+    }
+    .submenu ul li a, .submenu2 ul li a {
+    font-size: 10px;
+    padding: 5px 9px;
+    }
+    .submenu ul li, .submenu2 ul li {
+        margin: 5px 3px
+    }
+    .box-wrap {
+        padding: 15px;
+    }
+    .btn-red {
+        height: auto;
+        margin-top: 20px;
+    }
+  }
+
+  /* invitation-guests landing page */
+.card{
+    display: flex;
+    margin:0 auto;
+    color:#fff;
+}
+.card_design{
+    display: flex;
+    border-radius:1rem;
+    margin:2% 2%;
+    width:90%;
+    margin:0 auto;
+}
+.card_text{
+    border:2px solid white;
+    overflow: hidden;
+    background: linear-gradient(95.79deg, #461952 0%, #D31E00 100%);
+    box-shadow: 0px 3.47552px 3.47552px rgba(0, 0, 0, 0.25);
+    width:90%;
+    margin:1rem auto;
+    border-radius:1rem;
+    display: flex;
+    justify-content: space-between;
+
+}
+.card_text img{
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-left:1rem;
+    transform: rotate(360deg);
+}
+
+.card_text h1{
+    color:#fff;
+    width:45%;
+    height:auto;
+    font-weight:bold;
+    line-height: 2rem;
+    text-align: left;
+    font-size:1rem;
+    padding-left:0.5rem;
+    padding-top:1rem;
+}
+.card_meta{
+    display: flex;
+    flex-direction:column;
+}
+.meta_num{
+    padding-left:0.5rem;
+    font-weight:bold;
+}
+.svg_design{
+    background: linear-gradient(180deg, #F0B844 0%, #FE5706 100%);
+    border-radius: 17.5472px;
+    width:1.5rem;
+    align-items: center;
+}
+
+
+/* Abhishek kumar invitation page css */
+
+.wed_invitation_view_container{
+    width: 90%;
+    margin: 0 auto;
+    height:120vh;
+}
+
+.wed_invitation_view_container .card{
+    width: 90%;
+    margin: 0 auto;
+    background: linear-gradient(180deg, #F86D1E 0%, #FBB349 82.08%, #FCD65F 100%), url("./Rectangle\ 111.png");
+    box-shadow: 1.91349px 1.91349px 3.82697px rgba(0, 0, 0, 0.25);
+    border-radius: 1.1rem;
+    background-repeat: no-repeat;
+    margin-top: 1rem;
+}
+
+.wed_invitation_view_container .card span {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size:0.7rem;
+    margin-left:1rem;
+    line-height: 13px;
+    color: #FFFFFF;
+}
+.wed_invitation_view_container .card .card-img{
+    border-radius:1rem;
+    padding:0.8rem;
+}
+
+.wed_invitation_view_container .card-body .card-title {
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1.4rem;
+    color: #7F004B;
+}
+
+.card-body .card-text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 17px;
+    color: #FFFFFF;
+}
+
+.btn-1 {
+    text-align: center;
+}
+
+.btn-1 button {
+    background: linear-gradient(180deg, #7F004B 0%, #7F004B 100%);
+    box-shadow: 0px 0px 3.55556px 1.77778px rgba(0, 0, 0, 0.25);
+    border-radius: 21.9923px;
+    border: none;
+    padding: 0.2rem 1.9rem;
+    color: #FFFFFF;
+    font-weight: 600;
+
+}
+
+.logo {
+    background: linear-gradient(180deg, #FF0BB8 0%, #FF4518 100%);
+    box-shadow: 0px 0px 3.55556px 1.77778px rgba(0, 0, 0, 0.25);
+    border-radius: 21.9923px;
+    height:24px;
+    width:24px;
+    position: relative;
+    text-align: center;
+    top:3rem;
+    margin-left: 80%;
+}
+.card-img-top{
+    height:300px;
+}
+@media  screen and (min-width: 700px){
+    .wed_invitation_view_container{
+        width: 80%;
+        margin:0 auto;
+    }
+
+    }
+    @media  screen and (min-width: 900px){
+        .wed_invitation_view_container{
+            width: 45%;
+            margin:0 auto;
+        }
+
+        }
+
+.edit-material-invitation{
+    background: linear-gradient(180deg, #FF0BB8 0%, #FF4518 100%);
+    box-shadow: 0px 0px 3.55556px 1.77778px rgba(0, 0, 0, 0.25);
+    border-radius: 21.9923px;
+    margin-left:2rem;
+    padding:0.2rem;
+    color:#FFFFFF;
+}
+.card-text-heading{
+    color:#FFFFFF;
+    font-size: 1.5rem;
+}
+/* invitation page css is ended */
+
+/* sava the date view css by Abhshek kumar */
+.wed_date_view{
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 0.7rem;
+}
+
+.wed_location_text {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+}
+
+.wed_location_text {
+    margin-left:1.6rem;
+}
+
+
+.wed_location_text h2 {
+    font-family: Rage Italic;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 1.5rem;
+    line-height:2rem;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.wed_location_data h4 {
+    padding-left: 1.3rem;
+    font-family: Sahitya;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.3rem;
+    text-transform: capitalize;
+    font-weight: bold;
+
+    color: #7F004B;
+}
+
+.wed_location_data h5 {
+    padding-left: 2.2rem;
+    font-family: Sahitya;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height:1.4rem;
+    text-transform: uppercase;
+
+    color: #7F004B;
+
+}
+#clock_text{
+    font-size:1rem;
+    color:#FFFFFF;
+    letter-spacing: 0.1rem;
+}
+#wed_clock{
+    background-color: #FA7523;
+    color:#fff;
+    font-size:1.2rem;
+    text-align: center;
+    border-radius:0.7rem;
+    width:50vw;
+    margin-left:1rem;
+    padding:0.4rem;
+
+}
+@media(min-width:750px){
+    .wed_location_data h2{
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+    .wed_location_data h4{
+        font-size:1.6rem;
+        line-height: 3rem;
+    }
+    .wed_location_data h5{
+        font-size:1.5rem;
+        line-height: 3rem;
+    }
+    #wed_clock{
+        font-size: 3rem;
+        margin-left:3%;
+        width:35vw;
+    }
+    #clock_text{
+        font-size: 2rem;
+        padding-top:0.7rem
+    }
+
+}
+
+/* story view css is started */
+
+.wed_story_main_container {
+    width: 90%;
+    margin: 0 auto;
+    background: linear-gradient(137.28deg, #FA7624 1.15%, #FCCE5A 99.14%);
+
+
+}
+.wed_container_img{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.wed_heading_1 h1 {
+    position: relative;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    color: #000000;
+}
+.wed_heading_2{
+    display: flex;
+    justify-content: center;
+}
+.wed_heading_2 h2 {
+    font-family: Rage Italic;
+    font-style: italic;
+    font-weight: normal;
+    font-size:2rem;
+    line-height:3rem;
+    color: #461952;
+    margin-bottom: 1rem;
+
+}
+.wed_heading_2  span{
+    background: linear-gradient(180deg, #FF0BB8 0%, #FF4518 100%);
+    box-shadow: 0px 0px 2.55847px 1.27924px rgba(0, 0, 0, 0.25);
+    border-radius: 15.825px;
+     width: 17.91px;
+     height: 17.27px;
+     margin-left:1.4rem;
+
+     margin-top:1rem;
+
+}
+.wed_heading_2  span img{
+    padding-bottom:0.2rem;
+    padding-left: 0.2rem;
+}
+
+.wed_main_img{
+    display: flex;
+    justify-content: center;
+}
+.wed_main_img img{
+    width:70%;
+    height:70%;
+
+}
+.wed_story_view_section{
+    display: flex;
+    padding-top: 2rem;
+
+}
+.wed_story_view_child{
+    margin-left: 2rem;
+
+}
+.wed_story_view_child h1{
+    font-family: Perpetua;
+    font-style: normal;
+     font-weight: bold;
+    font-size:1.4rem;
+    line-height:1rem;
+
+color: #000000;
+
+}
+.wed_story_view_child p{
+font-family: Segoe UI;
+font-style: normal;
+font-weight: 350;
+font-size:0.7rem;
+line-height:1rem;
+
+color: #000000;
+}
+.wed_story_view_child img{
+    margin-right:1rem;
+    margin-top:1rem;
+}
+::selection {
+    color: rgb(251, 241, 241);
+
+}
+
+.wrapper-view {
+    padding: 0 1rem;
+    position: relative;
+
+
+}
+
+.wrapper-view .center-line {
+    position: absolute;
+    height:70%;
+    width: 2px;
+    border: 0.716713px solid #1973A7;
+    transform: rotate(90deg);
+     background-color: cornflowerblue;
+    left: 50%;
+    top:0.5rem;
+    transform: translateX(-50%);
+}
+
+.wrapper-view .row-timeline {
+    display: flex;
+}
+
+.wrapper-view .row-4 {
+    justify-content: flex-start;
+}
+
+.wrapper-view .row-2 {
+    justify-content: flex-end;
+}
+
+.wrapper-view .row-timeline section {
+    border-radius: 5px;
+    width: calc(50% - 40px);
+    padding:5px;
+    position: relative;
+}
+
+.wrapper-view .row-timeline section::before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background: #fff;
+    top:28px;
+    z-index: -1;
+    transform: rotate(45deg);
+}
+
+.row-4 section::before {
+    right:-7px;
+}
+
+.row-2 section::before {
+    left: -7px;
+}
+
+.row-timeline section .icon,
+.center-line .scroll-icon {
+    position:absolute;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius:50%;
+    color: #fff;
+    font-size:2rem;
+}
+.icon-logo{
+    padding-left:1rem;
+    padding-top:0.7rem;
+    position: absolute;
+}
+
+.center-line .scroll-icon {
+    bottom: 0px;
+    left:50%;
+    font-size:2rem;
+    transform: translateX(-260%);
+}
+
+.row-4 section i {
+    top: 5px;
+    right: -60px;
+}
+
+.row-2 section i{
+    top: 5px;
+    left: -60px;
+   color:white;
+}
+.row-4 section img{
+    top: 5px;
+    right: -60px;
+}
+
+.row-4  section  .details span {
+    font-size:1rem;
+    float: right;
+    line-height: 1rem;
+    font-family: Perpetua;
+font-style: normal;
+font-weight: bold;
+font-size:1.2rem;
+text-transform: capitalize;
+color: #000000;
+}
+.row-2  section  .details span {
+    font-size:1rem;
+
+    line-height: 1rem;
+    font-family: Perpetua;
+font-style: normal;
+font-weight: bold;
+font-size:1.2rem;
+text-transform: capitalize;
+color: #000000;
+}
+.row-4 section p{
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight:400;
+    font-size:0.6rem;
+    line-height:1rem;
+    color: #000000;
+}
+.row-2 section p{
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight:400;
+    font-size:0.6rem;
+    line-height:1rem;
+    color: #000000;
+}
+
+.row-timeline section p {
+    margin: 10px 0 17px 0;
+}
+
+
+
+@media(min-width: 790px) {
+    .wed_main_img img{
+        width:50%;
+        height:40%;
+    }
+    .wed_story_view_child h1{
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+    .wed_story_view_child p{
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+    .wed_story_view_child img{
+        width:300px;
+    }
+    .wrapper .center-line{
+        height:66%;
+    }
+    .row-4  section p{
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+    .row-2  section p{
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+
+}
+
+@media(min-width: 440px) {
+
+    .wrapper .center-line,
+    .row-timeline section::before,
+    .row-timeline section .icon {
+        display:block;
+    }
+
+    .wrapper .row-timeline {
+        margin: 10px 0;
+    }
+}
+
+ .first-div{
+
+     margin-left:60px;
+     position: absolute;
+ }
+
+ .second-div{
+     position: absolute;
+     top:130px;
+     z-index: 1;
+     margin-left: 30px;
+ }
+ .second-div img{
+     width:90px;
+     height:120px;
+ }
+ .third-div{
+     position: absolute;
+     margin-left: 100px;
+     top:130px;
+     z-index: 1;
+ }
+
+
+/* story view css is ended */

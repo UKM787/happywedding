@@ -1,0 +1,285 @@
+
+h5{
+    margin: 0;
+}
+.bg-body{
+    background-color: #E2A4B9!important;
+    height: 100%;
+    width: 100%;
+}
+
+.bg-nav{
+    background-color: #461952;
+}
+
+.logo-header{
+    width: 138px;
+    margin: auto;
+    height: 50px;
+}
+.logo-header img{
+    width: 100%;
+    height: auto;
+}
+
+.header-icon{
+    background-color: #DBD4D4;
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-icon img{
+    height: 17px;
+    margin-left: 3px;
+}
+
+.avatar img{
+    width: 36px;
+    height: 36px;
+}
+
+.list-icon{
+    display: flex;
+}
+.list-icon > div{
+    margin: 3px;
+    cursor: pointer;
+}
+
+.top-nav{
+    background-color: rgba(255,255,255,0.8);
+    width: 100%;
+    padding: 4px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-radius: 30px;
+}
+.top-nav > div{
+    padding: 7px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top-nav .active{
+    color: #fff;
+    border-radius: 40px;
+    background: #461952;
+}
+
+.bg-yellow{
+    background-color: rgba(252,150,17,1.0);
+}
+.content-box{
+    padding: 50px;
+}
+
+.invited-box{
+    width: 40%;
+    border-radius: 22px;
+    padding: 20px 10px;
+}
+.invited-box-right .time-schedule{
+    display: flex;
+    justify-content: space-between;
+}
+
+.invited-box h5{
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
+} 
+
+.count{
+    padding: 7px 15px;
+    margin: 5px;
+    border: 0.7px solid#fff;
+    background: #e0ad6b;
+}
+.count .inner-table{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.count .inner-table h5{
+    color: #000;
+}
+
+.middle-wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.invited-box-right{
+    width: 58%;
+    border-radius: 22px;
+    padding: 20px 25px;
+}
+
+.invited-box h5{
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
+} 
+/* .invited-box-right  */
+
+.date{
+    background: #fff;
+    padding: 5px 20px;
+    display: flex;
+    justify-content: center;
+    border-radius: 50px;
+    align-items: center;
+}
+
+.color-pink{
+    color: #80154A;
+    font-weight: 600;
+}
+
+.pink-box{
+    background-color: #a98192;
+    border-radius: 20px;
+    margin-top: -18px;
+}
+.name-title{
+    color: #d9b227;
+    font-family: cursive;
+    padding: 20px 0;
+}
+.vanue{
+    color: #fff;
+}
+.actions-icon{
+    background-color: #7f004b;
+    padding: 10px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.actions-icon img{
+    width: 25px;
+    cursor: pointer;
+}
+
+.new-box{
+    background-color: #80154A;
+    width: 150px;
+    padding: 11px 24px 29px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.green-calendar{
+background-color: #4DA24B;
+width: 100%;
+height: 100%;
+border-radius: 30px;
+box-shadow: inset 0px 3px 1px #0004;
+}
+
+.green-calendar .calendar-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    align-items: center;
+    color: #fff;
+}
+
+.green-calendar .calendar-header h5{
+    font-size: 25px;
+}
+.green-calendar .calendar-header svg{
+    cursor: pointer;
+}
+
+.table-box{
+    padding: 20px 45px;
+}
+
+.table-box th{
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 400;
+    border: none;
+}
+
+.table-box  td{
+    color: #fff;
+    text-align: center;
+}
+
+.notifications{
+    background-color: #E74343;
+    width: 40%;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 30px;
+    color: #fff;
+    box-shadow: 1px 1px 13px 1px #0004;
+}
+
+.notifications h5{
+    font-size: 25px;
+}
+
+.notifications ul li img{
+    width: 40px;
+}
+.notifications ul li {
+    padding: 5px;
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+   .width-50{
+       width: 50%!important;
+   }
+   .margin-top-30{
+       margin-top: 30px;
+   }
+}
+
+@media (max-width: 991px){
+    .invited-box-right .time-schedule{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+}
+
+@media (max-width: 767px){
+    .top-nav{
+        flex-direction: column;
+        text-align: center;
+        display: flex;
+    }
+    .width-100{
+        width: 100%!important;
+    }
+    .content-box{
+        padding: 10px;
+    }
+    .invited-box-right{
+      margin-top: 10px;
+    }
+    .green-calendar{
+        margin-top: 20px;
+    }
+    .notifications{
+        width: 100%;
+    }
+    .list-icon{
+    margin: 14px auto 0;
+    }
+}

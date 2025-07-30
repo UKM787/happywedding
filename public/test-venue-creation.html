@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Venue Creation with State/City</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; }
+        input, select, textarea { width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px; }
+        button { background: #007bff; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; }
+        button:hover { background: #0056b3; }
+        .result { margin-top: 20px; padding: 10px; border-radius: 4px; }
+        .success { background: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
+        .error { background: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
+    </style>
+</head>
+<body>
+    <h1>Test Venue Creation with State/City Context</h1>
+    
+    <div class="form-group">
+        <label for="state">Select State:</label>
+        <select id="state" onchange="loadCities()">
+            <option value="">Select State</option>
+        </select>
+    </div>
+    
+    <div class="form-group">
+        <label for="city">Select City:</label>
+        <select id="city" disabled>
+            <option value="">Select City</option>
+        </select>
+    </div>
+    
+    <div class="form-group">
+        <label for="venueName">Venue Name:</label>
+        <input type="text" id="venueName" placeholder="Enter venue name">
+    </div>
+    
+    <div class="form-group">
+        <label for="venueAddress">Venue Address:</label>
+        <textarea id="venueAddress" rows="3" placeholder="Enter venue address"></textarea>
+    </div>
+    
+    <button onclick="createVenue()">Create Venue with State/City</button>
+    
+    <div id="result"></div>
+
+    <script>
+        let selectedState = null;
+        let selectedCity = null;
+        
+        // Load states on page load
+        window.onload = function() {
+            loadStates();
+        };
+        
+        function loadStates() {
+            fetch('/api/states')
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        const stateSelect = document.getElementById('state');
+                        stateSelect.innerHTML = '<option value="">Select State</option>';
+                        
+                        data.data.forEach(state => {
+                            const option = document.createElement('option');
+                            option.value = JSON.stringify({id: state.id, name: state.name});
+                            option.textContent = state.name;
+                            stateSelect.appendChild(option);
+                        });
+                    }
+                })
+                .catch(error => {
+                    console.error('Error loading states:', error);
+                    showResult('Error loading states: ' + error.message, 'error');
+                });
+        }
+        
+        function loadCities() {
+            const stateSelect = document.getElementById('state');
+            const citySelect = document.getElementById('city');
+            
+            if (stateSelect.value) {
+                selectedState = JSON.parse(stateSelect.value);
+                
+                fetch(`/api/cities/${selectedState.id}`)
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.success) {
+                            citySelect.innerHTML = '<option value="">Select City</option>';
+                            citySelect.disabled = false;
+                            
+                            data.data.forEach(city => {
+                                const option = document.createElement('option');
+                                option.value = JSON.stringify({id: city.id, name: city.name});
+                                option.textContent = city.name;
+                                citySelect.appendChild(option);
+                            });
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error loading cities:', error);
+                        showResult('Error loading cities: ' + error.message, 'error');
+                    });
+            } else {
+                selectedState = null;
+                citySelect.innerHTML = '<option value="">Select City</option>';
+                citySelect.disabled = true;
+            }
+        }
+        
+        document.getElementById('city').onchange = function() {
+            if (this.value) {
+                selectedCity = JSON.parse(this.value);
+            } else {
+                selectedCity = null;
+            }
+        };
+        
+        function createVenue() {
+            const venueName = document.getElementById('venueName').value;
+            const venueAddress = document.getElementById('venueAddress').value;
+            
+            if (!venueName || !venueAddress) {
+                showResult('Please fill in venue name and address', 'error');
+                return;
+            }
+            
+            if (!selectedState || !selectedCity) {
+                showResult('Please select both state and city', 'error');
+                return;
+            }
+            
+            const formData = new FormData();
+            formData.append('name', venueName);
+            formData.append('address', venueAddress);
+            formData.append('state', selectedState.name);
+            formData.append('state_id', selectedState.id);
+            formData.append('city', selectedCity.name);
+            formData.append('location_id', selectedCity.id);
+            formData.append('locationmaster_id', selectedCity.id);
+            
+            console.log('Creating venue with data:', {
+                name: venueName,
+                address: venueAddress,
+                state: selectedState.name,
+                state_id: selectedState.id,
+                city: selectedCity.name,
+                location_id: selectedCity.id,
+                locationmaster_id: selectedCity.id
+            });
+            
+            fetch('/api/host/hostvenues', {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'X-Requested-With': 'XMLHttpRequest',
+                    'Accept': 'application/json'
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    showResult(`Venue "${venueName}" created successfully in ${selectedCity.name}, ${selectedState.name}!`, 'success');
+                    // Clear form
+                    document.getElementById('venueName').value = '';
+                    document.getElementById('venueAddress').value = '';
+                } else {
+                    showResult('Error: ' + data.message, 'error');
+                }
+            })
+            .catch(error => {
+                console.error('Error creating venue:', error);
+                showResult('Error creating venue: ' + error.message, 'error');
+            });
+        }
+        
+        function showResult(message, type) {
+            const resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = message;
+            resultDiv.className = 'result ' + type;
+        }
+    </script>
+</body>
+</html>

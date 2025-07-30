@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunk=self.webpackChunk||[]).push([[7299],{37299:(t,e,u)=>{u.r(e),u.d(e,{default:()=>s});const n={data:function(){return{route:"helo"}},methods:{}};const s=(0,u(51900).Z)(n,(function(){var t=this;return(0,t._self._c)("div",[t._v(t._s(t.route))])}),[],!1,null,"9bab4f16",null).exports}}]);
+//# sourceMappingURL=7299.js.map
