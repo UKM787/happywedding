@@ -2,14 +2,7 @@
 
 @section('content')
 
-@if($url == 'company')
-<form method="POST" action="{{ route('companyLogin') }}">
-    @csrf
-    @include('components.company')
-</form>
-@else
 <login-page url="{{$url}}" :error-submit="{{$errors}}" :oldvalues="{{json_encode(old(), true)}}"></login-page>
-@endif
 
 <!-- @if($url == 'vendor')
 <login-vendor-page url="{{$url}}" :error-submit="{{$errors}}" :oldvalues="{{json_encode(old(), true)}}"></login-vendor-page>

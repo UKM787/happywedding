@@ -70,8 +70,9 @@ class LoginController extends Controller
      */
     public function showLoginForm()
     {
-        $url = request()->segment(2); // Gets 'company' from '/login/company'
-        if (!$url) {
+        // dd(request()->session(), config('auth.guards'));
+        $url = explode('/', request()->getRequestUri())[1];
+        if ($url == 'login') {
             $url = 'guest';
         }
         return view('auth.login', ['url' => $url]);
@@ -427,31 +428,4 @@ class LoginController extends Controller
         }
         return redirect()->route('welcome')->with(['status' => 'Success', 'message' => 'Successfully logged out']);
     }
-
-    public function companyLogin(Request $request)
-    {
-        $request->validate([
-            'email' => 'required|email',
-            'password' => 'required',
-        ]);
-
-        if (Auth::guard('company')->attempt($request->only('email', 'password'), $request->remember)) {
-            return redirect()->intended(route('companywelcome'));
-        }
-
-        return back()->withErrors(['email' => 'Invalid credentials']);
-    }
-
-    public function logoutCompany()
-    {
-        Auth::guard('company')->logout();
-        if (request()->session()->has('password_hash_company')) {
-            request()->session()->forget('password_hash_company');
-        }
-        return redirect()->route('welcome')->with(['status' => 'Success', 'message' => 'Successfully logged out']);
-    }
 }
-
-
-
-
